@@ -148,13 +148,13 @@ body {
   position: absolute;
   left: 80px;
   bottom: 10px;
-  background-image: url("role-collection-ot.png");
+  background-image: url("images/role-collection-ot.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .job-grid {
-  height: 420px;
+  height: 380px;
   width: 500px;
   padding: 20px;
   border-radius: 20px;
@@ -165,7 +165,7 @@ body {
   align-items: center;
   gap: 15px;
   position: absolute;
-  bottom: -10px;
+  bottom: 10px;
   right: 120px;
 }
 
