@@ -20,7 +20,19 @@ body {
   align-items: center;
 }
 
-.nav-left a,
+.nav-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-left a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
 .nav-right a {
   color: white;
   text-decoration: none;
