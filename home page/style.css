@@ -12,7 +12,7 @@ body {
 
 /* Navbar */
 .navbar {
-  background: #0047ab;
+  background: rgb(0, 7, 133);
   color: white;
   padding: 14px 50px;
   display: flex;
@@ -40,6 +40,10 @@ body {
   margin-right: 30px;
 }
 
+.logo span {
+  color:rgb(3, 219, 252)
+}
+
 .register {
   background: #ea560d;
   /* color: #0047ab; */
@@ -48,19 +52,19 @@ body {
   font-weight: bold;
 }
 
-/* Hero */
-.hero {
+/* Main */
+.main {
   background: white;
   padding: 70px 20px;
   text-align: center;
 }
 
-.hero h1 {
+.main h1 {
   font-size: 38px;
   margin-bottom: 10px;
 }
 
-.hero p {
+.main p {
   color: #555;
   margin-bottom: 35px;
 }
@@ -115,6 +119,60 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+
+.why-jobcloud {
+  background: white;
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.why-jobcloud h2 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.why-subtitle {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  width: 90%;
+  margin: auto;
+}
+
+.why-card {
+  background: #90affe71;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.why-card:hover {
+  /* transform: translateY(-6px); */
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.why-card i {
+  font-size: 36px;
+  color: #0047ab;
+  margin-bottom: 15px;
+}
+
+.why-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: #555;
+}
+
 
 /* Jobs */
 .jobs {
@@ -224,12 +282,12 @@ body {
 
 /* Footer */
 .footer {
-  background: white;
+  background: rgb(0, 7, 133);
   text-align: center;
   padding: 20px;
   margin-top: 50px;
   font-size: 14px;
-  color: gray;
+  color: rgb(178, 178, 178);
 }
 
 .featured-companies {
