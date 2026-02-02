@@ -100,6 +100,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   border: none;
+  outline: none;
   border-left: 2px solid #ccc;
 }
 
@@ -128,7 +129,7 @@ body {
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 30px;
-  background-color: #b1c5fc56;
+  background-color: #0265fb79;
   position: relative;
   display: flex;
   justify-content: end;
@@ -160,18 +161,19 @@ body {
 }
 
 .job-grid {
-  height: 380px;
+  height: 420px;
   width: 500px;
   padding: 20px;
   border-radius: 20px;
-  background-color: rgba(74, 108, 255, 0.66);
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #44444457;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 15px;
   position: absolute;
-  bottom: 10px;
+  bottom: -10px;
   right: 120px;
 }
 
@@ -182,12 +184,15 @@ body {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  border: 1px solid #e5e7eb;
-  transition: box-shadow 0.3s;
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  box-shadow: 0 0 10px #6b6b6c70;
+  transition: all 0.3s;
 }
 
 .job-card:hover {
-  box-shadow: 0 6px 18px rgba(46, 4, 253, 0.733);
+  box-shadow: 0 0 12px rgba(46, 4, 253, 0.733);
+  height: 165px;
 }
 
 .job-card h3 {
@@ -318,6 +323,32 @@ body {
 .companies {
   margin-left: 50px;
   margin-top: 20px;
+}
+
+.view {
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.b {
+  color: blue;
+  border: 2px solid blue;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.b:hover {
+  color: white;
+  background-color: blue;
 }
 
 
