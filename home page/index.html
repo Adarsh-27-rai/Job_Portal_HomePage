@@ -81,41 +81,83 @@
 
     <div class=" job-all">
       <div class="job_img"></div>
-      <div class="job-grid">
-        <div class="job-card">
-          <h3>Frontend Developer</h3>
-          <p class="company">Infosys</p>
-          <p class="details">Bangalore • 2–5 yrs</p>
-          <span class="tag">React</span>
-          <span class="tag">HTML</span>
-        </div>
+      <section class="post-job">
+        <h2>Post a Job</h2>
+        <form id="jobForm" class="job-form">
+          <Label for="title">Title: </Label>
+          <input type="text" id="title" placeholder="Job Title" required />
+          <Label for="company">Company: </Label>
+          <input type="text" id="company" placeholder="Company Name" required />
+          <div class="empData">
+            <input type="text" id="location" placeholder="Location" required />
+            <input type="text" id="exprience" placeholder="Exprience" required /> 
+          </div>
+          <Label for="skills">Skills: </Label>
+          <input type="text" id="skills" placeholder="Skills (comma separated)" required />
+          <button type="submit">Add Job</button>
+        </form>
+      </section>
+    </div>
+  </section>
 
-        <div class="job-card">
-          <h3>Backend Developer</h3>
-          <p class="company">TCS</p>
-          <p class="details">Pune • 3–6 yrs</p>
-          <span class="tag">Node.js</span>
-          <span class="tag">MongoDB</span>
-        </div>
 
-        <div class="job-card">
-          <h3>Full Stack Engineer</h3>
-          <p class="company">Accenture</p>
-          <p class="details">Remote • 1–4 yrs</p>
-          <span class="tag">MERN</span>
-          <span class="tag">AWS</span>
-        </div>
+  <section class="job-grid">
 
-        <div class="job-card">
-          <h3>UI / UX Designer</h3>
-          <p class="company">Startup Hub</p>
-          <p class="details">Delhi • 0–3 yrs</p>
-          <span class="tag">Figma</span>
-          <span class="tag">Design</span>
+    <!-- Search Bar -->
+    <div class="job-search">
+      <h2 class="all-jobs">All Jobs</h2>
+      <label for="jobSearchInput" id="j_search">Search for Job:
+        <input type="text" id="jobSearchInput" placeholder="Search jobs, company, skills..." />
+      </label>
+    </div>
+    <div class="myJobs">
+      <div class="job-card">
+        <h3>Frontend Developer</h3>
+        <p class="company">Infosys</p>
+        <p class="details">Bangalore • 2–5 yrs</p>
+        <span class="tag">React</span>
+        <span class="tag">HTML</span>
+        <div class="delJob">
+          <button class="deleteJob">Remove</button>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <h3>Backend Developer</h3>
+        <p class="company">TCS</p>
+        <p class="details">Pune • 3–6 yrs</p>
+        <span class="tag">Node.js</span>
+        <span class="tag">MongoDB</span>
+        <div class="delJob">
+          <button class="deleteJob">Remove</button>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <h3>Full Stack Engineer</h3>
+        <p class="company">Accenture</p>
+        <p class="details">Remote • 1–4 yrs</p>
+        <span class="tag">MERN</span>
+        <span class="tag">AWS</span>
+        <div class="delJob">
+          <button class="deleteJob">Remove</button>
+        </div>
+      </div>
+
+      <div class="job-card">
+        <h3>UI / UX Designer</h3>
+        <p class="company">Startup Hub</p>
+        <p class="details">Delhi • 0–3 yrs</p>
+        <span class="tag">Figma</span>
+        <span class="tag">Design</span>
+        <div class="delJob">
+          <button class="deleteJob">Remove</button>
         </div>
       </div>
     </div>
+    </div>
   </section>
+
 
   <section>
     <h2 class="companies">Featured Companies</h2>
@@ -181,6 +223,8 @@
   <footer class="footer">
     <p>© 2026 JobCloud • Your first step into your new journey</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

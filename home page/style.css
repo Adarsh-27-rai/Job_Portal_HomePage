@@ -220,25 +220,20 @@ body {
 
 .job-grid {
   height: 420px;
-  width: 500px;
-  padding: 20px;
-  border-radius: 20px;
-  background-color: rgb(255, 255, 255);
+  min-height: fit-content;
+  width: 94%;
+  padding: 30px;
+  border-radius: 20px;  
+  margin: 40px 50px;
+  background-color: rgba(2, 97, 250, 0.185);
   border: 2px solid #44444457;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  position: absolute;
-  bottom: -10px;
-  right: 120px;
 }
 
 /* Job Card */
 .job-card {
   width: 220px;
-  height: 160px;
+  min-height: fit-content;
+  height: 180px;
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -246,6 +241,17 @@ body {
   cursor: pointer;
   box-shadow: 0 0 10px #6b6b6c70;
   transition: all 0.3s;
+}
+
+.myJobs {
+  height: 80%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+  overflow: auto;
+  gap: 26px;
 }
 
 .job-card:hover {
@@ -256,6 +262,41 @@ body {
 .job-card h3 {
   font-size: 18px;
   margin-bottom: 5px;
+}
+
+.delJob {
+  padding: 8px 0px;
+}
+
+.deleteJob {
+  background-color: red;
+  padding: 5px 9px; 
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+}
+
+.job-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#j_search {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.job-search input {
+  width: 400px;
+  padding: 12px 18px;
+  border-radius: 30px;
+  border: 2px solid #0047ab;
+  outline: none;
+  font-size: 16px;
 }
 
 .company {
@@ -410,3 +451,51 @@ body {
 }
 
 
+.post-job {
+  background: white;
+  width: fit-content;
+  margin: 40px 50px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  margin-top: 20px;
+}
+
+.job-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 400px;
+}
+
+.job-form button {
+  background: #0047ab;
+  margin-top: 15px;
+  width: 100%;
+  font-weight: 700;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.empData {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.empData input {
+  width: 48%;
+}
